@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Desenvolvedor Full Stack - Portfolio</title>
+  <link rel="icon" href="logolfi.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="top-nav" id="inicio">
+    <div class="container top-nav-inner">
+ <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="topNavLinks">
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+      </button>
+      <nav class="top-nav-links" id="topNavLinks" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="top-nav-overlay" data-nav-overlay></div>
+  </header>
+  <div class="min-h-screen bg-white">
+    <!-- Header Section -->
+    <main id="conteudo">
+    <section class="header-section" aria-label="Apresentação">
+      <div class="container">
+        <div class="header-content">
+          <div class="header-text">
+            <h1 class="title title-neon">Luís Felipe Medeiros</h1>
+            <div class="underline"></div>
+            <div class="subtitle-bold">Desenvolvedor</div>
+            <div class="subtitle-light">Fullstack</div>
+          </div>
+          <div class="header-image">
+            <img src="eu.png" alt="Luís Felipe Medeiros" class="profile-photo" decoding="async" fetchpriority="high" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me-section" id="sobre">
+      <div class="container">
+        <div class="section-header black">
+          <div class="section-header-box black">
+            <span class="section-header-text black">SOBRE MIM</span>
+            <svg class="icon-search black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <circle cx="11" cy="11" r="7" stroke-width="2" />
+              <line x1="16.65" y1="16.65" x2="21" y2="21" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="about-me-content">
+          <div class="about-me-text-centered">
+            <div class="code-comment">/* Quem sou eu */</div>
+            <p class="about-me-paragraph">Olá!, meu nome é Luís Felipe Medeiros , atualmente moro em São Joaquim da barra - São Paulo. Cursando Engenharia da Computação atualmente. Tenho experiência em desenvolvimento web e mobile, com foco em criar soluções tecnológicas inovadoras e funcionais.
+            </p>
+            
+            <div class="code-comment">/* Minha jornada */</div>
+            <p class="about-me-paragraph">Atualmente trabalho na Reta alimentos , como Suporte. Tambem trabalho na empresa  Supportrust sl 🇪🇸, como Desenvolvedor Full Stack.</p>
+            
+            <div class="code-comment">/* Experiência */</div>
+            <p class="about-me-paragraph">Além do desenvolvimento web, tenho experiência em criação de sistemas comerciais completos, aplicações para gestão empresarial e soluções personalizadas para diversos segmentos de mercado.</p>
+          </div>
+          
+          <!-- Destaques com ícones -->
+          <div class="about-me-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span class="highlight-number counter">5+</span>
+              <span class="highlight-text">Anos de Experiência</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <span class="highlight-number counter">30+</span>
+              <span class="highlight-text">Projetos Concluídos</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                </svg>
+              </div>
+              <span class="highlight-number counter">15+</span>
+              <span class="highlight-text">Clientes Satisfeitos</span>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Technologies Section -->
+    <section class="technologies-section" id="tecnologias">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header-box">
+            <span class="section-header-text">TECNOLOGIAS</span>
+            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <circle cx="11" cy="11" r="7" stroke-width="2" />
+              <line x1="16.65" y1="16.65" x2="21" y2="21" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+            </div>
+            <span class="tech-name">Java</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+            </div>
+            <span class="tech-name">HTML</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+            </div>
+            <span class="tech-name">CSS</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+            </div>
+            <span class="tech-name">PHP</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+            </div>
+            <span class="tech-name">TypeScript</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            </div>
+            <span class="tech-name">JavaScript</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            </div>
+            <span class="tech-name">Python</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+            </div>
+            <span class="tech-name">Git</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+            </div>
+            <span class="tech-name">SQL</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            </div>
+            <span class="tech-name">Node.js</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" />
+            </div>
+            <span class="tech-name">Vue.js</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" />
+            </div>
+            <span class="tech-name">React Native</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon-bg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" />
+            </div>
+            <span class="tech-name">Laravel</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projetos">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header-box">
+            <div class="section-header-text">PROJETOS</div>
+          </div>
+        </div>
+        
+        <!-- Filtros de Projetos -->
+        <div class="projects-filters">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+          <button type="button" class="filter-btn" data-filter="sistema-web" aria-pressed="false">Sistemas Web</button>
+          <button type="button" class="filter-btn" data-filter="landing-page" aria-pressed="false">Landing Pages</button>
+          <button type="button" class="filter-btn" data-filter="site" aria-pressed="false">Sites</button>
+          <button type="button" class="filter-btn" data-filter="aplicativo" aria-pressed="false">Aplicativos</button>
+        </div>
+
+        <!-- Grid Unificada de Projetos -->
+        <div class="projects-grid-unified">
+            <!-- Aplicativo Fast Viagens e Entregas -->
+            <div class="project-card" data-category="aplicativo">
+              <div class="project-content">
+                <h4 class="project-title">Fast Viagens e Entregas</h4>
+                <p class="project-description">Aplicativo de motorista/passageiro urbano em Portugal.</p>
+                <p class="project-stack">Plataformas: iOS e Android</p>
+                <div class="project-features">
+                  <span class="project-feature">Solicitar corrida</span>
+                  <span class="project-feature">Acompanhamento em tempo real</span>
+                  <span class="project-feature">Pagamentos integrados</span>
+                  <span class="project-feature">Avaliação de motoristas</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://fastviagens.com/" target="_blank" class="project-link">Site oficial</a>
+                  <div class="store-buttons">
+                    <a href="https://apps.apple.com/pt/app/fast-viagens-e-entregas/id6748966685" target="_blank" class="store-btn" aria-label="Download na App Store">
+                      <img src="appstore.svg" alt="App Store" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.fast.apppassageiro" target="_blank" class="store-btn" aria-label="Download na Play Store">
+                      <img src="playstore.svg" alt="Play Store" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aplicativo Swapee -->
+            <div class="project-card" data-category="aplicativo">
+              <div class="project-content">
+                <h4 class="project-title">Swapee</h4>
+                <p class="project-description">Aplicativo de trocas e doações nos Estados Unidos.</p>
+                <p class="project-stack">Plataformas: iOS e Android</p>
+                <div class="project-features">
+                  <span class="project-feature">Trocas de itens</span>
+                  <span class="project-feature">Doações</span>
+                  <span class="project-feature">Comunidade</span>
+                </div>
+                <div class="project-links">
+                  <div class="project-in-progress">App Store: em criação</div>
+                  <div class="project-in-progress">Play Store: em criação</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sistema Web Gestão de Igreja -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title">Gestão de Igreja</h4>
+                <p class="project-description">Sistema completo para gestão de igrejas com diversas funcionalidades.</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Dashboard</span>
+                  <span class="project-feature">Cadastro de membros</span>
+                  <span class="project-feature">Dízimos</span>
+                  <span class="project-feature">Despesas</span>
+                  <span class="project-feature">Eventos</span>
+                  <span class="project-feature">Doações</span>
+                  <span class="project-feature">Histórico</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://sistemadeigrejlfi.web.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                  <p class="project-free">Totalmente gratuito</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema Web PDV + ERP Completo -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title"> PDV + ERP Completo</h4>
+                <p class="project-description">Sistema ERP completo que atende todos os tipos de nicho comercial.</p>
+                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
+                <div class="project-features">
+                  <span class="project-feature">Cadastro de clientes</span>
+                  <span class="project-feature">Cadastro de fornecedores</span>
+                  <span class="project-feature">Cadastro de funcionários</span>
+                  <span class="project-feature">Estoque</span>
+                  <span class="project-feature">Caixa</span>
+                  <span class="project-feature">Criação de etiquetas EAN-13</span>
+                  <span class="project-feature">Cobranças</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://www.sistemapdvlfinfo.shop/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                  <p class="project-credentials">Usuário: teste | Senha: teste123</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema Web PDV + ERP White -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title"> PDV + ERP White</h4>
+                <p class="project-description">Sistema ERP completo que atende todos os tipos de nicho comercial.</p>
+                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
+                <div class="project-features">
+                  <span class="project-feature">Dashboard</span>
+                  <span class="project-feature">Cadastro de clientes</span>
+                  <span class="project-feature">Produtos</span>
+                  <span class="project-feature">Fornecedores</span>
+                  <span class="project-feature">Funcionários</span>
+                  <span class="project-feature">Comanda</span>
+                  <span class="project-feature">Relatórios</span>
+                  <span class="project-feature">PDV</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://operacionalsystemlfi.web.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                  <p class="project-credentials">Usuário: teste | Senha: teste123</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema Web PDV + ERP RGB -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title">PDV + ERP RGB</h4>
+                <p class="project-description">Sistema ERP completo que atende todos os tipos de nicho comercial.</p>
+                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
+                <div class="project-features">
+                  <span class="project-feature">Dashboard</span>
+                  <span class="project-feature">Cadastro de clientes</span>
+                  <span class="project-feature">Produtos</span>
+                  <span class="project-feature">Fornecedores</span>
+                  <span class="project-feature">Funcionários</span>
+                  <span class="project-feature">Comanda</span>
+                  <span class="project-feature">Relatórios</span>
+                  <span class="project-feature">PDV</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://systemlfipdv.web.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                  <p class="project-credentials">Usuário: teste | Senha: teste123</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema PDV Assistência Técnica -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title"> PDV Assistência Técnica</h4>
+                <p class="project-description">Sistema especializado para gestão de assistências técnicas.</p>
+                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
+                <div class="project-features">
+                  <span class="project-feature">Cadastro de cliente</span>
+                  <span class="project-feature">Cadastro de fornecedor</span>
+                  <span class="project-feature">Estoque</span>
+                  <span class="project-feature">Caixa</span>
+                  <span class="project-feature">Criação de etiquetas EAN-13</span>
+                  <span class="project-feature">Ordem de serviço</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://systemteclfi.web.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                  <p class="project-credentials">Usuário: teste | Senha: teste123</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema Web Rapid Rescue -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title"> Rapid Rescue</h4>
+                <p class="project-description">Sistema para asseguradora de serviços</p>
+                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
+                <div class="project-features">
+                  <span class="project-feature">Cadastro de faturas de gasolina</span>
+                  <span class="project-feature">Cadastro de faturas de ferramentas</span>
+                  <span class="project-feature">Cadastro de Usuários</span>
+                  <span class="project-feature">Painel admin</span>
+                </div>
+                <div class="project-links">
+                  <div class="project-restricted">Acesso Restrito</div>
+                  <p class="project-credentials">Apresentação apenas em reunião</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema Web Chamados Paulista -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title"> Chamados Paulista</h4>
+                <p class="project-description">Sistema para rede de supermercados, com foco em chamados.</p>
+                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
+                <div class="project-features">
+                  <span class="project-feature">Cadastro de chamados</span>
+                  <span class="project-feature">Tickets</span>
+                  <span class="project-feature">Cadastro de usuários</span>
+                  <span class="project-feature">Painel admin</span>
+                </div>
+                <div class="project-links">
+                  <div class="project-restricted">Acesso Restrito</div>
+                  <p class="project-credentials">Apresentação apenas em reunião</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title">Mega Fone (Supermercado)</h4>
+                <p class="project-description">Sistema web para criar frases rápidas e fazer anúncios por voz no mercado.</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Frases rápidas</span>
+                  <span class="project-feature">Salvar e reutilizar</span>
+                  <span class="project-feature">Seleção de voz</span>
+                  <span class="project-feature">Velocidade e tom</span>
+                  <span class="project-feature">Volume</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://paulistamegafone.vercel.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema Web Orçamentos e Contratos -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title"> Orçamentos e Contratos</h4>
+                <p class="project-description">Sistema gratuito para gerar orçamentos e contratos.</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Criar orçamentos</span>
+                  <span class="project-feature">Criar contratos</span>
+                  <span class="project-feature">Histórico</span>
+                  <span class="project-feature">Configurações</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://orcamentosfelipe.vercel.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                  <p class="project-free">Totalmente gratuito</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema Web Drakkar Boats -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title"> Drakkar Boats</h4>
+                <p class="project-description">Painel de vendas com painel administrador para gestão de barcos na Flórida.</p>
+                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
+                <div class="project-features">
+                  <span class="project-feature">Cadastro de vendas</span>
+                  <span class="project-feature">Acompanhar pedidos</span>
+                  <span class="project-feature">Ordens de serviços</span>
+                  <span class="project-feature">Marketing</span>
+                  <span class="project-feature">Orçamentos</span>
+                  <span class="project-feature">Controle de fabricação</span>
+                  <span class="project-feature">Painel administrador</span>
+                </div>
+                <div class="project-links">
+                  <div class="project-restricted">Acesso Restrito</div>
+                  <p class="project-credentials">Apresentação apenas em reunião</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema Web Pierfans +18 -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title"> Pierfans +18</h4>
+                <p class="project-description">Site para vendas de conteúdo Adulto +18</p>
+                <p class="project-stack">Desenvolvimento: Frontend Mobile</p>
+                <div class="project-features">
+                  <span class="project-feature">Conteúdos</span>
+                  <span class="project-feature">Lives</span>
+                  <span class="project-feature">Chat</span>
+                  <span class="project-feature">Internacional</span>
+                  <span class="project-feature">Parcerias</span>
+                  <span class="project-feature">Filiados</span>
+                  <span class="project-feature">Criadores</span>
+                  <span class="project-feature">Refiliação</span>
+                  <span class="project-feature">Recompensas</span>
+                  <span class="project-feature">Painel administrador</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://pierfans.com.br/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                  <p class="project-credentials">Apenas para maiores de +18</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema Web Gerador de Ficha para Bar -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title"> Gerador de Ficha para Bar</h4>
+                <p class="project-description">Ferramenta para criar fichas personalizadas para bares e estabelecimentos.</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Nome</span>
+                  <span class="project-feature">Valor</span>
+                  <span class="project-feature">Quantidade de ficha</span>
+                  <span class="project-feature">Logo do produto</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://geradordeficha.web.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                  <p class="project-free">Totalmente gratuito</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema Web Confia Consultas -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title">Confia Consultas</h4>
+                <p class="project-description">Painel de busca de informações pessoais completas.</p>
+                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
+                <div class="project-features">
+                  <span class="project-feature">Buscas simples</span>
+                  <span class="project-feature">Buscas completas</span>
+                  <span class="project-feature">CPF/CNPJ</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://www.confiaconsultas.com.br/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema Web Painel de Cronograma Capilar Martha Brust -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-content">
+                <h4 class="project-title">Painel de Cronograma Capilar Martha Brust</h4>
+                <p class="project-description">Acesso restrito</p>
+                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
+                <div class="project-features">
+                  <span class="project-feature">Acompanhamento</span>
+                  <span class="project-feature">Diário</span>
+                  <span class="project-feature">Missões</span>
+                </div>
+                <div class="project-links">
+                  <div class="project-restricted">Acesso Restrito</div>
+                  <p class="project-credentials">Apresentação apenas em reunião</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Landing page Gateway de Pagamento -->
+            <div class="project-card" data-category="landing-page">
+              <div class="project-content">
+                <h4 class="project-title"> Gateway de Pagamento</h4>
+                <p class="project-description">Apresentação futurística para Gateway de Pagamento</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Pagamento</span>
+                  <span class="project-feature">Documentação</span>
+                  <span class="project-feature">Suporte</span>
+                  <span class="project-feature">Customização</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://baluartepay.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
+                  <p class="project-in-progress">Landing Page em Desenvolvimento</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Link Bio para Influencer Digital -->
+            <div class="project-card" data-category="landing-page">
+              <div class="project-content">
+                <h4 class="project-title">Link Bio Influencer</h4>
+                <p class="project-description">Link bio para influencer digital.</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Perfil</span>
+                  <span class="project-feature">Links rápidos</span>
+                  <span class="project-feature">Conversões</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://linkbiomarthabrust.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Landing page Venda de Cronograma Capilar -->
+            <div class="project-card" data-category="landing-page">
+              <div class="project-content">
+                <h4 class="project-title"> Venda de Cronograma Capilar</h4>
+                <p class="project-description">Venda de cronograma capilar.</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Produto</span>
+                  <span class="project-feature">Benefícios</span>
+                  <span class="project-feature">Checkout</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://vendacronogramamarthabrust.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Landing page MetaPulse Softwares -->
+            <div class="project-card" data-category="landing-page">
+              <div class="project-content">
+                <h4 class="project-title"> MetaPulse Softwares</h4>
+                <p class="project-description">Landing page para a empresa MetaPulse no ramo de Desenvolvimento de Software</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Desenvolvimento</span>
+                  <span class="project-feature">Design</span>
+                  <span class="project-feature">Suporte</span>
+                  <span class="project-feature">Tecnologias</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://sitemetapulse.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
+                  <p class="project-in-progress">Landing Page em Desenvolvimento</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Landing page Brilla Hogarbenidorm -->
+            <div class="project-card" data-category="landing-page">
+              <div class="project-content">
+                <h4 class="project-title"> Brilla Hogarbenidorm</h4>
+                <p class="project-description">Landing page para a empresa Brilla Hogarbenidorm no ramo de Limpeza</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Sobre nós</span>
+                  <span class="project-feature">Agendamentos</span>
+                  <span class="project-feature">Contato</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://brillahogarbenidorm.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
+                  <p class="project-free">Landing Page em Produção</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Landing page Studio de Tatuagem -->
+            <div class="project-card" data-category="landing-page">
+              <div class="project-content">
+                <h4 class="project-title"> Studio de Tatuagem</h4>
+                <p class="project-description">Website para Studio de tatuagem com informações sobre serviços e agendamentos.</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Sobre</span>
+                  <span class="project-feature">Artistas</span>
+                  <span class="project-feature">Portfolios</span>
+                  <span class="project-feature">Orçamentos</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://tattolfinfosjb.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
+                  <p class="project-free">Landing page disponível para compra!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="landing-page">
+              <div class="project-content">
+                <h4 class="project-title">Dra. Thatiane Leme</h4>
+                <p class="project-description">Landing page para advocacia Tributária e Previdenciária.</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Quem sou</span>
+                  <span class="project-feature">Áreas de atuação</span>
+                  <span class="project-feature">Serviços</span>
+                  <span class="project-feature">Contato</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://www.advthatianeleme.com.br/" target="_blank" class="project-link">Visitar Landing Page</a>
+                  <p class="project-free">Landing Page em Produção</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Landing page Venda de sistema web -->
+            <div class="project-card" data-category="landing-page">
+              <div class="project-content">
+                <h4 class="project-title"> Venda de sistema web de criação própria</h4>
+                <p class="project-description">Landing page para atrair cliente na compra de sistema web pdv+ erp</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Inicio</span>
+                  <span class="project-feature">Recursos</span>
+                  <span class="project-feature">Beneficios</span>
+                  <span class="project-feature">Preço</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://vendasistemalfi.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
+                  <p class="project-free">Landing Page em Produção</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Landing page Aplicativo Swapee -->
+            <div class="project-card" data-category="landing-page">
+              <div class="project-content">
+                <h4 class="project-title">Aplicativo Swapee</h4>
+                <p class="project-description">Landing page para aplicativo Swapee - Trocas e doações</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Inicio</span>
+                  <span class="project-feature">Doação</span>
+                  <span class="project-feature">Troca</span>
+                  <span class="project-feature">Sobre</span>
+                  <span class="project-feature">Contato</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://siteswepee.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
+                  <p class="project-in-progress">Landing Page em Desenvolvimento até lançar app</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Site Drakkar Boats -->
+            <div class="project-card" data-category="site">
+              <div class="project-content">
+                <h4 class="project-title"> Drakkar Boats</h4>
+                <p class="project-description">Site para vendas de barcos internacionais com diversas funcionalidades.</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Sobre</span>
+                  <span class="project-feature">Modelos</span>
+                  <span class="project-feature">Monte seu barco</span>
+                  <span class="project-feature">Revendedores</span>
+                  <span class="project-feature">Lugares para pescar</span>
+                  <span class="project-feature">Contato</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://drakkarboats.com/pt/" target="_blank" class="project-link">Visitar Site</a>
+                  <p class="project-free">Site em Produção</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="site">
+              <div class="project-content">
+                <h4 class="project-title">Medz Outlet</h4>
+                <p class="project-description">E-commerce com vitrine de produtos e preços, focado em calçados e camisetas.</p>
+                <p class="project-stack">Desenvolvimento: Frontend</p>
+                <div class="project-features">
+                  <span class="project-feature">Catálogo</span>
+                  <span class="project-feature">Listagem de produtos</span>
+                  <span class="project-feature">Preços</span>
+                  <span class="project-feature">Responsivo</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://medzoutlet.vercel.app/" target="_blank" class="project-link">Visitar Loja</a>
+                  <p class="project-free">E-commerce em Produção</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        
+      </div>
+    </section>
+
+
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="avaliacoes" data-share-url="https://share.google/vCkqIiqDAU0yOIhY0" data-place-query="LFI Informática São Joaquim da Barra SP">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header-box">
+            <span class="section-header-text">AVALIAÇÕES</span>
+            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <circle cx="11" cy="11" r="7" stroke-width="2" />
+              <line x1="16.65" y1="16.65" x2="21" y2="21" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="reviews-wrapper">
+          <div class="reviews-summary">
+            <div class="reviews-score" aria-label="Média de avaliações no Google">
+              <span class="score-number">5.0</span>
+              <div class="score-stars" title="Avaliação média">
+                ★★★★★
+              </div>
+              <span class="score-count">com base em avaliações do Google</span>
+            </div>
+            <a class="google-reviews-btn" href="https://share.google/vCkqIiqDAU0yOIhY0" target="_blank" rel="noopener noreferrer">
+              Ver avaliações no Google
+            </a>
+          </div>
+
+          <div class="reviews-list" aria-live="polite">
+            <!-- Quando configurado com API/Place ID, os cards serão preenchidos via JS -->
+            <div class="review-card placeholder">
+              <div class="review-header">
+                <div class="reviewer-avatar" aria-hidden="true">L</div>
+                <div class="reviewer-info">
+                  <div class="reviewer-name">Cliente</div>
+                  <div class="review-date">Data recente</div>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Excelente atendimento e serviço! Recomendo a LFI Informática.</p>
+            </div>
+            <div class="review-card placeholder">
+              <div class="review-header">
+                <div class="reviewer-avatar" aria-hidden="true">F</div>
+                <div class="reviewer-info">
+                  <div class="reviewer-name">Cliente</div>
+                  <div class="review-date">Data recente</div>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Profissional rápido e atencioso. Ótimos preços.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Company Section -->
+    <section class="company-section" id="empresa">
+      <div class="container">
+        <div class="section-header black">
+          <div class="section-header-box black">
+            <span class="section-header-text black">MINHA EMPRESA</span>
+            <svg class="icon-search black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <circle cx="11" cy="11" r="7" stroke-width="2" />
+              <line x1="16.65" y1="16.65" x2="21" y2="21" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="company-grid">
+          <div class="company-info">
+            <div class="company-item">MANUTENÇÕES E REPAROS</div>
+            <div class="company-item">RECUPERAÇÃO DE DADOS</div>
+            <div class="company-item">ESPECIALIZAÇÃO EM PC GAMER</div>
+            <div class="company-item">SOFTWARES PERSONALIZADOS</div>
+            <div class="company-item">SITES PERSONALIZADOS</div>
+            <div class="company-item">SISTEMAS WEB PERSONALIZADOS</div>
+            <div class="company-item">SISTEMAS WEB - VARIEDADES</div>
+          </div>
+
+          <div class="company-logo-container">
+            <img src="logolfi.png" alt="LF Informática" class="company-logo" />
+          </div>
+        </div>
+
+        <div class="company-instagram">
+          <a href="https://www.instagram.com/lfinfo_sjb" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <div class="instagram-box">
+              <span>@LFINFO_SJB</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section" id="contato">
+      <div class="container text-center">
+        <div class="footer-text">Desenvolvido por Luis Felipe Medeiros Riquieri</div>
+        <div class="footer-text footer-bold">LFINFO_SJB</div>
+        <ul class="footer-icons footer-social" aria-label="Redes sociais">
+          <li>
+            <a class="social-link whatsapp" href="https://wa.me/5516993311282" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp icon" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="social-link github" href="https://github.com/felipemedeiroszz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github icon" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="social-link instagram" href="https://www.instagram.com/felipemedeiroszzz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram icon" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCh_5H4WrKsxz0qSMywpRjAbu1ZNVEbE5E",
+      authDomain: "portfoliofelipemedeiros.firebaseapp.com",
+      projectId: "portfoliofelipemedeiros",
+      storageBucket: "portfoliofelipemedeiros.firebasestorage.app",
+      messagingSenderId: "896202336157",
+      appId: "1:896202336157:web:108a921eeb17752c57b174",
+      measurementId: "G-77QH1VPQTB"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <a class="floating-social-link social-link whatsapp" href="https://wa.me/5516993817699" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp icon" aria-hidden="true"></i>
+  </a>
+
+</body>
+</html>
