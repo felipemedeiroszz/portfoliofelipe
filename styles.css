@@ -2128,6 +2128,10 @@ a:hover {
   background: #7C3AED;
 }
 
+.social-link.linkedin::before {
+  background: #0077B5;
+}
+
 @media (max-width: 480px) {
   .social-link {
     width: 64px;
