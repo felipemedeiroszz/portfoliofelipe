@@ -763,6 +763,28 @@ function initProjectFilters() {
   const filterButtons = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
   
+  // Mostrar todos os projetos automaticamente no mobile
+  function showAllProjects() {
+    projectCards.forEach(card => {
+      card.classList.remove('hidden');
+      card.style.display = 'block';
+      card.style.opacity = '1';
+      card.style.transform = 'scale(1)';
+    });
+  }
+  
+  // Verificar se é mobile e mostrar todos os projetos
+  if (window.innerWidth <= 768) {
+    showAllProjects();
+    
+    // Ativar o botão "Todos" por padrão no mobile
+    const allButton = document.querySelector('.filter-btn[data-filter="all"]');
+    if (allButton) {
+      allButton.classList.add('active');
+      allButton.setAttribute('aria-pressed', 'true');
+    }
+  }
+  
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
       // Remove active class de todos os botões
@@ -812,6 +834,19 @@ function initProjectFilters() {
         }
       }, 350);
     });
+  });
+  
+  // Re-verificar ao redimensionar a tela
+  window.addEventListener('resize', () => {
+    if (window.innerWidth <= 768) {
+      showAllProjects();
+      // Ativar o botão "Todos" por padrão no mobile
+      const allButton = document.querySelector('.filter-btn[data-filter="all"]');
+      if (allButton) {
+        allButton.classList.add('active');
+        allButton.setAttribute('aria-pressed', 'true');
+      }
+    }
   });
 }
 

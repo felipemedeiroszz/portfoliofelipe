@@ -3177,6 +3177,13 @@ body {
   max-width: 1120px;
 }
 
+@media (max-width: 768px) {
+  #tecnologias .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
 @media (min-width: 1024px) {
   #tecnologias .tech-grid {
     grid-template-columns: repeat(6, 1fr);
