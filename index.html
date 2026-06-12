@@ -27,6 +27,20 @@
         <a href="#empresa">Empresa</a>
         <a href="#contato">Contato</a>
       </nav>
+      <div class="header-social-icons">
+        <a class="social-link whatsapp" href="https://wa.me/5516993311282" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp icon" aria-hidden="true"></i>
+        </a>
+        <a class="social-link github" href="https://github.com/felipemedeiroszz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github icon" aria-hidden="true"></i>
+        </a>
+        <a class="social-link instagram" href="https://www.instagram.com/felipemedeiroszzz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram icon" aria-hidden="true"></i>
+        </a>
+        <a class="social-link linkedin" href="https://www.linkedin.com/in/luisfelipemedeirosdev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in icon" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
     <div class="top-nav-overlay" data-nav-overlay></div>
   </header>
@@ -34,16 +48,17 @@
     <!-- Header Section -->
     <main id="conteudo">
     <section class="header-section" aria-label="Apresentação">
+      <div class="hero-background">
+        <img src="public/fundu.png" alt="Background" class="hero-bg-image" />
+      </div>
       <div class="container">
         <div class="header-content">
           <div class="header-text">
-            <h1 class="title title-neon">Luís Felipe Medeiros</h1>
-            <div class="underline"></div>
-            <div class="subtitle-bold">Desenvolvedor</div>
-            <div class="subtitle-light">Fullstack</div>
+            <img src="public/luisfelip.png" alt="Luís Felipe Medeiros" class="hero-name-image" />
           </div>
           <div class="header-image">
-            <img src="eu.png" alt="Luís Felipe Medeiros" class="profile-photo" decoding="async" fetchpriority="high" />
+            <img src="eu.png" alt="Luís Felipe Medeiros" class="hero-profile-image" />
+            <img src="public/card.png" alt="Profile Card" class="hero-card-image" />
           </div>
         </div>
       </div>
@@ -229,592 +244,563 @@
 
         <!-- Grid Unificada de Projetos -->
         <div class="projects-grid-unified">
-            <!-- Aplicativo Fast Viagens e Entregas -->
+            <!-- Fast Viagens e Entregas -->
             <div class="project-card" data-category="aplicativo">
-              <div class="project-content">
-                <h4 class="project-title">Fast Viagens e Entregas</h4>
-                <p class="project-description">Aplicativo de motorista/passageiro urbano em Portugal.</p>
-                <p class="project-stack">Plataformas: iOS e Android</p>
-                <div class="project-features">
-                  <span class="project-feature">Solicitar corrida</span>
-                  <span class="project-feature">Acompanhamento em tempo real</span>
-                  <span class="project-feature">Pagamentos integrados</span>
-                  <span class="project-feature">Avaliação de motoristas</span>
+              <div class="project-screenshot">
+               <img src="public/FASTNOW.png" alt="Fast Now" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-mobile">Aplicativo Mobile</span>
+                  <span class="project-status status-production">Em Produção</span>
                 </div>
-                <div class="project-links">
-                  <a href="https://fastviagens.com/" target="_blank" class="project-link">Site oficial</a>
-                  <div class="store-buttons">
-                    <a href="https://apps.apple.com/pt/app/fast-viagens-e-entregas/id6748966685" target="_blank" class="store-btn" aria-label="Download na App Store">
-                      <img src="appstore.svg" alt="App Store" />
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.fast.apppassageiro" target="_blank" class="store-btn" aria-label="Download na Play Store">
-                      <img src="playstore.svg" alt="Play Store" />
-                    </a>
-                  </div>
+                <h3 class="project-title">Fast Viagens e Entregas</h3>
+                <p class="project-description">Aplicativo de motorista/passageiro urbano em Portugal com acompanhamento em tempo real.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" class="tech-icon-img" title="React Native" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="tech-icon-img" title="TypeScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-icon-img" title="Node.js" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://fastviagens.com/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Aplicativo Swapee -->
+            <!-- Looprofit -->
+            <div class="project-card" data-category="site">
+              <div class="project-screenshot">
+                <img src="public/LOOPROFIT.png" alt="Looprofit" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-ecommerce">E-commerce</span>
+                  <span class="project-status status-production">Em Produção</span>
+                </div>
+                <h3 class="project-title">Looprofit</h3>
+                <p class="project-description">Site de vendas de skins para Counter-Strike com catálogo e checkout.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://www.looprofit.com.br/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- GRS Negócios Imobiliários -->
+            <div class="project-card" data-category="site">
+               <img src="public/GRS.png" alt="GRS" class="project-image" />
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-site">Site</span>
+                  <span class="project-status status-production">Em Produção</span>
+                </div>
+                <h3 class="project-title">GRS Negócios Imobiliários</h3>
+                <p class="project-description">Site institucional para empresa de negócios imobiliários com apresentação de serviços.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://www.grsnegocios.com.br/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Swapee -->
             <div class="project-card" data-category="aplicativo">
-              <div class="project-content">
-                <h4 class="project-title">Swapee</h4>
-                <p class="project-description">Aplicativo de trocas e doações nos Estados Unidos.</p>
-                <p class="project-stack">Plataformas: iOS e Android</p>
-                <div class="project-features">
-                  <span class="project-feature">Trocas de itens</span>
-                  <span class="project-feature">Doações</span>
-                  <span class="project-feature">Comunidade</span>
-                </div>
-                <div class="project-links">
-                  <div class="project-in-progress">App Store: em criação</div>
-                  <div class="project-in-progress">Play Store: em criação</div>
+              <div class="project-screenshot">
+                <div class="screenshot-placeholder">
+                  <span class="screenshot-icon">🔄</span>
                 </div>
               </div>
-            </div>
-            
-            <!-- Sistema Web Gestão de Igreja -->
-            <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title">Gestão de Igreja</h4>
-                <p class="project-description">Sistema completo para gestão de igrejas com diversas funcionalidades.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Dashboard</span>
-                  <span class="project-feature">Cadastro de membros</span>
-                  <span class="project-feature">Dízimos</span>
-                  <span class="project-feature">Despesas</span>
-                  <span class="project-feature">Eventos</span>
-                  <span class="project-feature">Doações</span>
-                  <span class="project-feature">Histórico</span>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-mobile">Aplicativo Mobile</span>
+                  <span class="project-status status-development">Em Desenvolvimento</span>
                 </div>
-                <div class="project-links">
-                  <a href="https://sistemadeigrejlfi.web.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
-                  <p class="project-free">Totalmente gratuito</p>
+                <h3 class="project-title">Swapee</h3>
+                <p class="project-description">Aplicativo de trocas e doações nos Estados Unidos com comunidade integrada.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" class="tech-icon-img" title="React Native" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="tech-icon-img" title="TypeScript" />
+                </div>
+                <div class="project-footer">
+                  <span class="project-button disabled">Em breve</span>
                 </div>
               </div>
             </div>
 
-            <!-- Sistema Web PDV + ERP Completo -->
+            <!-- Gestão de Igreja -->
             <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title"> PDV + ERP Completo</h4>
+              <div class="project-screenshot">
+                <img src="public/IGREJA.png" alt="Gestão de Igreja" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-web">Sistema Web</span>
+                  <span class="project-status status-production">Em Produção</span>
+                </div>
+                <h3 class="project-title">Gestão de Igreja</h3>
+                <p class="project-description">Sistema completo para gestão de igrejas com dashboard, membros, dízimos e eventos.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="tech-icon-img" title="TypeScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon-img" title="MySQL" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://sistemadeigrejlfi.web.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PDV + ERP Completo -->
+            <div class="project-card" data-category="sistema-web">
+              <div class="project-screenshot">
+                <img src="public/pdv.png" alt="PDV + ERP Completo" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-web">Sistema Web</span>
+                  <span class="project-status status-production">Em Produção</span>
+                </div>
+                <h3 class="project-title">PDV + ERP Completo</h3>
                 <p class="project-description">Sistema ERP completo que atende todos os tipos de nicho comercial.</p>
-                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
-                <div class="project-features">
-                  <span class="project-feature">Cadastro de clientes</span>
-                  <span class="project-feature">Cadastro de fornecedores</span>
-                  <span class="project-feature">Cadastro de funcionários</span>
-                  <span class="project-feature">Estoque</span>
-                  <span class="project-feature">Caixa</span>
-                  <span class="project-feature">Criação de etiquetas EAN-13</span>
-                  <span class="project-feature">Cobranças</span>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-icon-img" title="Node.js" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="tech-icon-img" title="TypeScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon-img" title="MySQL" />
                 </div>
-                <div class="project-links">
-                  <a href="https://www.sistemapdvlfinfo.shop/" target="_blank" class="project-link">Acessar Sistema Web</a>
-                  <p class="project-credentials">Usuário: teste | Senha: teste123</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Sistema Web PDV + ERP White -->
-            <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title"> PDV + ERP White</h4>
-                <p class="project-description">Sistema ERP completo que atende todos os tipos de nicho comercial.</p>
-                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
-                <div class="project-features">
-                  <span class="project-feature">Dashboard</span>
-                  <span class="project-feature">Cadastro de clientes</span>
-                  <span class="project-feature">Produtos</span>
-                  <span class="project-feature">Fornecedores</span>
-                  <span class="project-feature">Funcionários</span>
-                  <span class="project-feature">Comanda</span>
-                  <span class="project-feature">Relatórios</span>
-                  <span class="project-feature">PDV</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://operacionalsystemlfi.web.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
-                  <p class="project-credentials">Usuário: teste | Senha: teste123</p>
+                <div class="project-footer">
+                  <a href="https://www.sistemapdvlfinfo.shop/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Sistema Web PDV + ERP RGB -->
+            <!-- PDV + ERP White -->
             <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title">PDV + ERP RGB</h4>
-                <p class="project-description">Sistema ERP completo que atende todos os tipos de nicho comercial.</p>
-                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
-                <div class="project-features">
-                  <span class="project-feature">Dashboard</span>
-                  <span class="project-feature">Cadastro de clientes</span>
-                  <span class="project-feature">Produtos</span>
-                  <span class="project-feature">Fornecedores</span>
-                  <span class="project-feature">Funcionários</span>
-                  <span class="project-feature">Comanda</span>
-                  <span class="project-feature">Relatórios</span>
-                  <span class="project-feature">PDV</span>
+              <div class="project-screenshot">
+                <img src="public/PDVWHITE.png" alt="PDV + ERP White" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-web">Sistema Web</span>
+                  <span class="project-status status-production">Em Produção</span>
                 </div>
-                <div class="project-links">
-                  <a href="https://systemlfipdv.web.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
-                  <p class="project-credentials">Usuário: teste | Senha: teste123</p>
+                <h3 class="project-title">PDV + ERP White</h3>
+                <p class="project-description">Sistema ERP completo com dashboard, PDV e gestão de comandas.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-icon-img" title="Node.js" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="tech-icon-img" title="TypeScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon-img" title="MySQL" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://operacionalsystemlfi.web.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Sistema PDV Assistência Técnica -->
+            <!-- PDV + ERP RGB -->
             <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title"> PDV Assistência Técnica</h4>
-                <p class="project-description">Sistema especializado para gestão de assistências técnicas.</p>
-                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
-                <div class="project-features">
-                  <span class="project-feature">Cadastro de cliente</span>
-                  <span class="project-feature">Cadastro de fornecedor</span>
-                  <span class="project-feature">Estoque</span>
-                  <span class="project-feature">Caixa</span>
-                  <span class="project-feature">Criação de etiquetas EAN-13</span>
-                  <span class="project-feature">Ordem de serviço</span>
+              <div class="project-screenshot">
+                <img src="public/PDVRGB.png" alt="PDV + ERP RGB" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-web">Sistema Web</span>
+                  <span class="project-status status-production">Em Produção</span>
                 </div>
-                <div class="project-links">
-                  <a href="https://systemteclfi.web.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
-                  <p class="project-credentials">Usuário: teste | Senha: teste123</p>
+                <h3 class="project-title">PDV + ERP RGB</h3>
+                <p class="project-description">Sistema ERP completo com gestão de estoque, caixa e relatórios.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-icon-img" title="Node.js" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="tech-icon-img" title="TypeScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon-img" title="MySQL" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://systemlfipdv.web.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Sistema Web Rapid Rescue -->
+            <!-- PDV Assistência Técnica -->
             <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title"> Rapid Rescue</h4>
-                <p class="project-description">Sistema para asseguradora de serviços</p>
-                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
-                <div class="project-features">
-                  <span class="project-feature">Cadastro de faturas de gasolina</span>
-                  <span class="project-feature">Cadastro de faturas de ferramentas</span>
-                  <span class="project-feature">Cadastro de Usuários</span>
-                  <span class="project-feature">Painel admin</span>
+              <div class="project-screenshot">
+                <img src="public/ASSISTENCIA.png" alt="PDV Assistência Técnica" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-web">Sistema Web</span>
+                  <span class="project-status status-production">Em Produção</span>
                 </div>
-                <div class="project-links">
-                  <div class="project-restricted">Acesso Restrito</div>
-                  <p class="project-credentials">Apresentação apenas em reunião</p>
+                <h3 class="project-title">PDV Assistência Técnica</h3>
+                <p class="project-description">Sistema especializado para gestão de assistências técnicas com ordens de serviço.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-icon-img" title="Node.js" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="tech-icon-img" title="TypeScript" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://systemteclfi.web.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Sistema Web Chamados Paulista -->
+            <!-- Mega Fone -->
             <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title"> Chamados Paulista</h4>
-                <p class="project-description">Sistema para rede de supermercados, com foco em chamados.</p>
-                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
-                <div class="project-features">
-                  <span class="project-feature">Cadastro de chamados</span>
-                  <span class="project-feature">Tickets</span>
-                  <span class="project-feature">Cadastro de usuários</span>
-                  <span class="project-feature">Painel admin</span>
-                </div>
-                <div class="project-links">
-                  <div class="project-restricted">Acesso Restrito</div>
-                  <p class="project-credentials">Apresentação apenas em reunião</p>
-                </div>
+              <div class="project-screenshot">
+                <img src="public/MEGAFONE.png" alt="Mega Fone" class="project-image" />
               </div>
-            </div>
-
-            <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title">Mega Fone (Supermercado)</h4>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-web">Sistema Web</span>
+                  <span class="project-status status-production">Em Produção</span>
+                </div>
+                <h3 class="project-title">Mega Fone</h3>
                 <p class="project-description">Sistema web para criar frases rápidas e fazer anúncios por voz no mercado.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Frases rápidas</span>
-                  <span class="project-feature">Salvar e reutilizar</span>
-                  <span class="project-feature">Seleção de voz</span>
-                  <span class="project-feature">Velocidade e tom</span>
-                  <span class="project-feature">Volume</span>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
                 </div>
-                <div class="project-links">
-                  <a href="https://paulistamegafone.vercel.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Sistema Web Orçamentos e Contratos -->
-            <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title"> Orçamentos e Contratos</h4>
-                <p class="project-description">Sistema gratuito para gerar orçamentos e contratos.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Criar orçamentos</span>
-                  <span class="project-feature">Criar contratos</span>
-                  <span class="project-feature">Histórico</span>
-                  <span class="project-feature">Configurações</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://orcamentosfelipe.vercel.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
-                  <p class="project-free">Totalmente gratuito</p>
+                <div class="project-footer">
+                  <a href="https://paulistamegafone.vercel.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Sistema Web Drakkar Boats -->
+            <!-- Orçamentos e Contratos -->
             <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title"> Drakkar Boats</h4>
-                <p class="project-description">Painel de vendas com painel administrador para gestão de barcos na Flórida.</p>
-                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
-                <div class="project-features">
-                  <span class="project-feature">Cadastro de vendas</span>
-                  <span class="project-feature">Acompanhar pedidos</span>
-                  <span class="project-feature">Ordens de serviços</span>
-                  <span class="project-feature">Marketing</span>
-                  <span class="project-feature">Orçamentos</span>
-                  <span class="project-feature">Controle de fabricação</span>
-                  <span class="project-feature">Painel administrador</span>
+              <div class="project-screenshot">
+                <img src="public/ORÇAMENTOS.png" alt="Orçamentos e Contratos" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-web">Sistema Web</span>
+                  <span class="project-status status-opensource">Open Source</span>
                 </div>
-                <div class="project-links">
-                  <div class="project-restricted">Acesso Restrito</div>
-                  <p class="project-credentials">Apresentação apenas em reunião</p>
+                <h3 class="project-title">Orçamentos e Contratos</h3>
+                <p class="project-description">Sistema gratuito para gerar orçamentos e contratos profissionalmente.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://orcamentosfelipe.vercel.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Sistema Web Pierfans +18 -->
+            <!-- Gerador de Ficha para Bar -->
             <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title"> Pierfans +18</h4>
-                <p class="project-description">Site para vendas de conteúdo Adulto +18</p>
-                <p class="project-stack">Desenvolvimento: Frontend Mobile</p>
-                <div class="project-features">
-                  <span class="project-feature">Conteúdos</span>
-                  <span class="project-feature">Lives</span>
-                  <span class="project-feature">Chat</span>
-                  <span class="project-feature">Internacional</span>
-                  <span class="project-feature">Parcerias</span>
-                  <span class="project-feature">Filiados</span>
-                  <span class="project-feature">Criadores</span>
-                  <span class="project-feature">Refiliação</span>
-                  <span class="project-feature">Recompensas</span>
-                  <span class="project-feature">Painel administrador</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://pierfans.com.br/" target="_blank" class="project-link">Acessar Sistema Web</a>
-                  <p class="project-credentials">Apenas para maiores de +18</p>
-                </div>
+              <div class="project-screenshot">
+                <img src="public/FICHA.png" alt="Gerador de Ficha" class="project-image" />
               </div>
-            </div>
-
-            <!-- Sistema Web Gerador de Ficha para Bar -->
-            <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title"> Gerador de Ficha para Bar</h4>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-web">Sistema Web</span>
+                  <span class="project-status status-opensource">Open Source</span>
+                </div>
+                <h3 class="project-title">Gerador de Ficha</h3>
                 <p class="project-description">Ferramenta para criar fichas personalizadas para bares e estabelecimentos.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Nome</span>
-                  <span class="project-feature">Valor</span>
-                  <span class="project-feature">Quantidade de ficha</span>
-                  <span class="project-feature">Logo do produto</span>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
                 </div>
-                <div class="project-links">
-                  <a href="https://geradordeficha.web.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
-                  <p class="project-free">Totalmente gratuito</p>
+                <div class="project-footer">
+                  <a href="https://geradordeficha.web.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Sistema Web Confia Consultas -->
+            <!-- Confia Consultas -->
             <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title">Confia Consultas</h4>
-                <p class="project-description">Painel de busca de informações pessoais completas.</p>
-                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
-                <div class="project-features">
-                  <span class="project-feature">Buscas simples</span>
-                  <span class="project-feature">Buscas completas</span>
-                  <span class="project-feature">CPF/CNPJ</span>
+              <div class="project-screenshot">
+                <img src="public/CONFIA.png" alt="Confia Consultas" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-web">Sistema Web</span>
+                  <span class="project-status status-production">Em Produção</span>
                 </div>
-                <div class="project-links">
-                  <a href="https://www.confiaconsultas.com.br/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                <h3 class="project-title">Confia Consultas</h3>
+                <p class="project-description">Painel de busca de informações pessoais completas com CPF/CNPJ.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-icon-img" title="Node.js" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="tech-icon-img" title="TypeScript" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://www.confiaconsultas.com.br/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Sistema Web Agenda Taurina -->
+            <!-- Agenda Taurina -->
             <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title">Agenda Taurina</h4>
-                <p class="project-description">Sistema web para eventos de touradas em Portugal.</p>
-                <p class="project-stack">Desenvolvimento: React + Vite</p>
-                <div class="project-features">
-                  <span class="project-feature">Eventos tauromáquicos</span>
-                  <span class="project-feature">Progressive Web App</span>
-                  <span class="project-feature">Design responsivo</span>
-                  <span class="project-feature">Fontes personalizadas</span>
+              <div class="project-screenshot">
+                <img src="public/TAURINO.png" alt="Agenda Taurina" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-web">Sistema Web</span>
+                  <span class="project-status status-production">Em Produção</span>
                 </div>
-                <div class="project-links">
-                  <a href="https://agendataurina.vercel.app/" target="_blank" class="project-link">Acessar Sistema Web</a>
+                <h3 class="project-title">Agenda Taurina</h3>
+                <p class="project-description">Sistema web para eventos de touradas em Portugal com PWA.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://agendataurina.vercel.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Sistema Web Painel de Cronograma Capilar Martha Brust -->
-            <div class="project-card" data-category="sistema-web">
-              <div class="project-content">
-                <h4 class="project-title">Painel de Cronograma Capilar Martha Brust</h4>
-                <p class="project-description">Acesso restrito</p>
-                <p class="project-stack">Desenvolvimento: Frontend e Backend</p>
-                <div class="project-features">
-                  <span class="project-feature">Acompanhamento</span>
-                  <span class="project-feature">Diário</span>
-                  <span class="project-feature">Missões</span>
-                </div>
-                <div class="project-links">
-                  <div class="project-restricted">Acesso Restrito</div>
-                  <p class="project-credentials">Apresentação apenas em reunião</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Landing page Gateway de Pagamento -->
+            <!-- Gateway de Pagamento -->
             <div class="project-card" data-category="landing-page">
-              <div class="project-content">
-                <h4 class="project-title"> Gateway de Pagamento</h4>
-                <p class="project-description">Apresentação futurística para Gateway de Pagamento</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Pagamento</span>
-                  <span class="project-feature">Documentação</span>
-                  <span class="project-feature">Suporte</span>
-                  <span class="project-feature">Customização</span>
+              <div class="project-screenshot">
+                <img src="public/BALUARTE.png" alt="Gateway de Pagamento" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-landing">Landing Page</span>
+                  <span class="project-status status-development">Em Desenvolvimento</span>
                 </div>
-                <div class="project-links">
-                  <a href="https://baluartepay.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
-                  <p class="project-in-progress">Landing Page em Desenvolvimento</p>
+                <h3 class="project-title">Gateway de Pagamento</h3>
+                <p class="project-description">Apresentação futurística para Gateway de Pagamento com documentação.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://baluartepay.vercel.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Link Bio para Influencer Digital -->
+            <!-- Link Bio Influencer -->
             <div class="project-card" data-category="landing-page">
-              <div class="project-content">
-                <h4 class="project-title">Link Bio Influencer</h4>
-                <p class="project-description">Link bio para influencer digital.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Perfil</span>
-                  <span class="project-feature">Links rápidos</span>
-                  <span class="project-feature">Conversões</span>
+              <div class="project-screenshot">
+                <img src="public/LINKBIO.png" alt="Link Bio Influencer" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-landing">Landing Page</span>
+                  <span class="project-status status-production">Em Produção</span>
                 </div>
-                <div class="project-links">
-                  <a href="https://linkbiomarthabrust.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
+                <h3 class="project-title">Link Bio Influencer</h3>
+                <p class="project-description">Link bio profissional para influencer digital com analytics.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://linkbiomarthabrust.vercel.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Landing page Venda de Cronograma Capilar -->
+            <!-- Zuf Car Guinchos -->
             <div class="project-card" data-category="landing-page">
-              <div class="project-content">
-                <h4 class="project-title"> Venda de Cronograma Capilar</h4>
-                <p class="project-description">Venda de cronograma capilar.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Produto</span>
-                  <span class="project-feature">Benefícios</span>
-                  <span class="project-feature">Checkout</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://vendacronogramamarthabrust.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
-                </div>
+              <div class="project-screenshot">
+                <img src="public/ZUF.png" alt="Zuf Car Guinchos" class="project-image" />
               </div>
-            </div>
-
-            <!-- Landing page Zuf Car Guinchos -->
-            <div class="project-card" data-category="landing-page">
-              <div class="project-content">
-                <h4 class="project-title">Zuf Car Guinchos</h4>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-landing">Landing Page</span>
+                  <span class="project-status status-production">Em Produção</span>
+                </div>
+                <h3 class="project-title">Zuf Car Guinchos</h3>
                 <p class="project-description">Landing page para serviço de guincho 24h em São Joaquim da Barra SP.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Serviços 24h</span>
-                  <span class="project-feature">Contato WhatsApp</span>
-                  <span class="project-feature">Localização</span>
-                  <span class="project-feature">Depoimentos</span>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
                 </div>
-                <div class="project-links">
-                  <a href="https://www.zufcarguinchos.com.br/" target="_blank" class="project-link">Visitar Landing Page</a>
+                <div class="project-footer">
+                  <a href="https://www.zufcarguinchos.com.br/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Landing page São Joaquim Guincho -->
+            <!-- MetaPulse Softwares -->
             <div class="project-card" data-category="landing-page">
-              <div class="project-content">
-                <h4 class="project-title">São Joaquim Guincho</h4>
-                <p class="project-description">Landing page para serviço de guincho 24h em São Joaquim da Barra SP.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Serviços 24h</span>
-                  <span class="project-feature">Contato WhatsApp</span>
-                  <span class="project-feature">Localização</span>
-                  <span class="project-feature">Galeria</span>
+              <div class="project-screenshot">
+                <img src="public/META.png" alt="MetaPulse Softwares" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-landing">Landing Page</span>
+                  <span class="project-status status-development">Em Desenvolvimento</span>
                 </div>
-                <div class="project-links">
-                  <a href="https://www.saojoaquimguinchos.com.br/" target="_blank" class="project-link">Visitar Landing Page</a>
+                <h3 class="project-title">MetaPulse Softwares</h3>
+                <p class="project-description">Landing page para empresa de desenvolvimento de software.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://sitemetapulse.vercel.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Landing page MetaPulse Softwares -->
-            <div class="project-card" data-category="landing-page">
-              <div class="project-content">
-                <h4 class="project-title"> MetaPulse Softwares</h4>
-                <p class="project-description">Landing page para a empresa MetaPulse no ramo de Desenvolvimento de Software</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Desenvolvimento</span>
-                  <span class="project-feature">Design</span>
-                  <span class="project-feature">Suporte</span>
-                  <span class="project-feature">Tecnologias</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://sitemetapulse.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
-                  <p class="project-in-progress">Landing Page em Desenvolvimento</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Landing page Brilla Hogarbenidorm -->
-            <div class="project-card" data-category="landing-page">
-              <div class="project-content">
-                <h4 class="project-title"> Brilla Hogarbenidorm</h4>
-                <p class="project-description">Landing page para a empresa Brilla Hogarbenidorm no ramo de Limpeza</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Sobre nós</span>
-                  <span class="project-feature">Agendamentos</span>
-                  <span class="project-feature">Contato</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://brillahogarbenidorm.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
-                  <p class="project-free">Landing Page em Produção</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Landing page Studio de Tatuagem -->
-            <div class="project-card" data-category="landing-page">
-              <div class="project-content">
-                <h4 class="project-title"> Studio de Tatuagem</h4>
-                <p class="project-description">Website para Studio de tatuagem com informações sobre serviços e agendamentos.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Sobre</span>
-                  <span class="project-feature">Artistas</span>
-                  <span class="project-feature">Portfolios</span>
-                  <span class="project-feature">Orçamentos</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://tattolfinfosjb.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
-                  <p class="project-free">Landing page disponível para compra!</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-card" data-category="landing-page">
-              <div class="project-content">
-                <h4 class="project-title">Dra. Thatiane Leme</h4>
-                <p class="project-description">Landing page para advocacia Tributária e Previdenciária.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Quem sou</span>
-                  <span class="project-feature">Áreas de atuação</span>
-                  <span class="project-feature">Serviços</span>
-                  <span class="project-feature">Contato</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://www.advthatianeleme.com.br/" target="_blank" class="project-link">Visitar Landing Page</a>
-                  <p class="project-free">Landing Page em Produção</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Landing page Venda de sistema web -->
-            <div class="project-card" data-category="landing-page">
-              <div class="project-content">
-                <h4 class="project-title"> Venda de sistema web de criação própria</h4>
-                <p class="project-description">Landing page para atrair cliente na compra de sistema web pdv+ erp</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Inicio</span>
-                  <span class="project-feature">Recursos</span>
-                  <span class="project-feature">Beneficios</span>
-                  <span class="project-feature">Preço</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://vendasistemalfi.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
-                  <p class="project-free">Landing Page em Produção</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Landing page Aplicativo Swapee -->
-            <div class="project-card" data-category="landing-page">
-              <div class="project-content">
-                <h4 class="project-title">Aplicativo Swapee</h4>
-                <p class="project-description">Landing page para aplicativo Swapee - Trocas e doações</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Inicio</span>
-                  <span class="project-feature">Doação</span>
-                  <span class="project-feature">Troca</span>
-                  <span class="project-feature">Sobre</span>
-                  <span class="project-feature">Contato</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://siteswepee.vercel.app/" target="_blank" class="project-link">Visitar Landing Page</a>
-                  <p class="project-in-progress">Landing Page em Desenvolvimento até lançar app</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Site Drakkar Boats -->
+            <!-- Drakkar Boats -->
             <div class="project-card" data-category="site">
-              <div class="project-content">
-                <h4 class="project-title"> Drakkar Boats</h4>
-                <p class="project-description">Site para vendas de barcos internacionais com diversas funcionalidades.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Sobre</span>
-                  <span class="project-feature">Modelos</span>
-                  <span class="project-feature">Monte seu barco</span>
-                  <span class="project-feature">Revendedores</span>
-                  <span class="project-feature">Lugares para pescar</span>
-                  <span class="project-feature">Contato</span>
+              <div class="project-screenshot">
+                <div class="screenshot-placeholder">
+                  <span class="screenshot-icon">🚤</span>
                 </div>
-                <div class="project-links">
-                  <a href="https://drakkarboats.com/pt/" target="_blank" class="project-link">Visitar Site</a>
-                  <p class="project-free">Site em Produção</p>
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-site">Site</span>
+                  <span class="project-status status-production">Em Produção</span>
+                </div>
+                <h3 class="project-title">Drakkar Boats</h3>
+                <p class="project-description">Site para vendas de barcos internacionais com configurador personalizado.</p>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
+                </div>
+                <div class="project-footer">
+                  <a href="https://drakkarboats.com/pt/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
+            <!-- Medz Outlet -->
             <div class="project-card" data-category="site">
-              <div class="project-content">
-                <h4 class="project-title">Medz Outlet</h4>
+              <div class="project-screenshot">
+                <img src="public/MEDZ.png" alt="Medz Outlet" class="project-image" />
+              </div>
+              <div class="project-body">
+                <div class="project-header">
+                  <span class="project-badge badge-ecommerce">E-commerce</span>
+                  <span class="project-status status-production">Em Produção</span>
+                </div>
+                <h3 class="project-title">Medz Outlet</h3>
                 <p class="project-description">E-commerce com vitrine de produtos e preços, focado em calçados e camisetas.</p>
-                <p class="project-stack">Desenvolvimento: Frontend</p>
-                <div class="project-features">
-                  <span class="project-feature">Catálogo</span>
-                  <span class="project-feature">Listagem de produtos</span>
-                  <span class="project-feature">Preços</span>
-                  <span class="project-feature">Responsivo</span>
+                <div class="project-tech">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon-img" title="React" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon-img" title="JavaScript" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon-img" title="HTML5" />
                 </div>
-                <div class="project-links">
-                  <a href="https://medzoutlet.vercel.app/" target="_blank" class="project-link">Visitar Loja</a>
-                  <p class="project-free">E-commerce em Produção</p>
+                <div class="project-footer">
+                  <a href="https://medzoutlet.vercel.app/" target="_blank" class="project-button">
+                    Ver Projeto
+                    <svg class="button-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>

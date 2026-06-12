@@ -57,8 +57,7 @@ function initAnimations() {
     '.tech-grid',
     '.contact-grid',
     '.company-grid',
-    '.projects-grid',
-    '.projects-grid-unified'
+    '.projects-grid'
   ];
   
   const observer = new IntersectionObserver((entries) => {
@@ -762,29 +761,22 @@ function initProjectEffects() {
 function initProjectFilters() {
   const filterButtons = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
-  
-  // Mostrar todos os projetos automaticamente no mobile
+
+  // Mostrar todos os projetos automaticamente
   function showAllProjects() {
     projectCards.forEach(card => {
       card.classList.remove('hidden');
-      card.style.display = 'block';
-      card.style.opacity = '1';
-      card.style.transform = 'scale(1)';
     });
   }
-  
-  // Verificar se é mobile e mostrar todos os projetos
-  if (window.innerWidth <= 768) {
-    showAllProjects();
-    
-    // Ativar o botão "Todos" por padrão no mobile
-    const allButton = document.querySelector('.filter-btn[data-filter="all"]');
-    if (allButton) {
-      allButton.classList.add('active');
-      allButton.setAttribute('aria-pressed', 'true');
-    }
+
+  // Mostrar todos os projetos e ativar o botão "Todos" por padrão
+  showAllProjects();
+  const allButton = document.querySelector('.filter-btn[data-filter="all"]');
+  if (allButton) {
+    allButton.classList.add('active');
+    allButton.setAttribute('aria-pressed', 'true');
   }
-  
+
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
       // Remove active class de todos os botões
@@ -795,59 +787,23 @@ function initProjectFilters() {
       // Adiciona active class ao botão clicado
       button.classList.add('active');
       button.setAttribute('aria-pressed', 'true');
-      
+
       const filterValue = button.getAttribute('data-filter');
-      
+
       projectCards.forEach(card => {
         const cardCategory = card.getAttribute('data-category');
-        
+
         if (filterValue === 'all' || cardCategory === filterValue) {
           // Mostrar card
           card.classList.remove('hidden');
-          card.style.display = 'block';
-          
-          // Animação de entrada
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'scale(1)';
-          }, 50);
         } else {
           // Esconder card
-          card.style.opacity = '0';
-          card.style.transform = 'scale(0.8)';
-          
-          // Esconder completamente após animação
-          setTimeout(() => {
-            card.classList.add('hidden');
-            card.style.display = 'none';
-          }, 300);
+          card.classList.add('hidden');
         }
       });
-      
-      // Reorganizar grid após filtro
-      setTimeout(() => {
-        const grid = document.querySelector('.projects-grid-unified');
-        if (grid) {
-          grid.style.display = 'none';
-          grid.offsetHeight; // Força reflow
-          grid.style.display = 'grid';
-        }
-      }, 350);
     });
   });
-  
-  // Re-verificar ao redimensionar a tela
-  window.addEventListener('resize', () => {
-    if (window.innerWidth <= 768) {
-      showAllProjects();
-      // Ativar o botão "Todos" por padrão no mobile
-      const allButton = document.querySelector('.filter-btn[data-filter="all"]');
-      if (allButton) {
-        allButton.classList.add('active');
-        allButton.setAttribute('aria-pressed', 'true');
-      }
-    }
-  });
+
 }
 
 // Função para animações da seção da empresa
