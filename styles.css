@@ -1777,8 +1777,10 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000000;
-  z-index: 1;
+  background: radial-gradient(900px 520px at 20% 20%, rgba(0, 255, 65, 0.03) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(0, 255, 65, 0.02) 0%, transparent 50%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .company-content {
@@ -2083,6 +2085,24 @@ a:hover {
   justify-content: center;
   overflow: hidden;
   transition: all 0.3s ease;
+  position: relative;
+}
+
+.reel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.reel-play-icon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  color: #ffffff;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+  z-index: 10;
+  transition: transform 0.3s ease;
 }
 
 .reel-card:hover .reel-preview {
@@ -2090,10 +2110,12 @@ a:hover {
   transform: scale(1.05);
 }
 
-.reel-icon {
-  width: 48px;
-  height: 48px;
-  color: #c2ff00;
+.reel-card:hover .reel-image {
+  transform: scale(1.1);
+}
+
+.reel-card:hover .reel-play-icon {
+  transform: scale(1.2);
 }
 
 .reel-label {
@@ -2129,18 +2151,22 @@ a:hover {
 
 .review-card-image {
   flex: 0 0 auto;
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 16/9;
   border-radius: 12px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .review-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* Footer */
